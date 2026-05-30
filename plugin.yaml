@@ -1,0 +1,12 @@
+name: github-native-tools
+kind: standalone
+version: 0.1.0
+description: |
+  Capability-named native GitHub repo tools — github_repo_list / view /
+  delete / create. Auth is internal (App installation token preferred,
+  GITHUB_TOKEN/GH_TOKEN fallback) — agents never hand-roll JWT through
+  execute_code. Encapsulation prevents the "grep .env, openssl-sign JWT,
+  curl install_tokens, then DELETE" anti-pattern observed before this
+  toolset existed.
+author: nnnet/AiManager
+repo: https://github.com/nnnet/hermes-plugin-github-native-tools
