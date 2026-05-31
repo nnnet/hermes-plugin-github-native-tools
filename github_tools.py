@@ -38,7 +38,7 @@ _NAME_RE = re.compile(r"^[A-Za-z0-9_.-]+$")
 def _get_token() -> Optional[str]:
     """Return a usable GitHub auth token. App installation first, then PAT."""
     try:
-        from tools.github_app_workspace import _get_app_token  # type: ignore
+        from .github_app_workspace import _get_app_token
         tok = _get_app_token()
         if tok:
             return tok
@@ -52,7 +52,7 @@ def _credentials_available() -> bool:
     if os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN"):
         return True
     try:
-        from tools.github_app_workspace import is_configured  # type: ignore
+        from .github_app_workspace import is_configured
         return bool(is_configured())
     except Exception:
         return False
