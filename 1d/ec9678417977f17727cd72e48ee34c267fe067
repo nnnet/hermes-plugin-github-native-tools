@@ -1,0 +1,22 @@
+github_tools.py
+  s_e5369d415d379b::t_d5740f06e84ea4 41
+  s_e5369d415d379b::t_52cf37ae75e1e7 55
+github_app_workspace.py
+  s_e5369d415d379b::t_fad200afbe4acb 1-498
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "1dec9678417977f17727cd72e48ee34c267fe067",
+  "prompts": {},
+  "sessions": {
+    "s_e5369d415d379b": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "9b040558-739b-4a21-810b-53eec3b51a99",
+        "model": "claude-opus-4-7"
+      },
+      "human_author": "nnnet <zkowkmdx@sharklasers.com>"
+    }
+  }
+}
